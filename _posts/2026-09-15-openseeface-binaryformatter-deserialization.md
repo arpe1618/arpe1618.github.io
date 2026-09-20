@@ -6,7 +6,6 @@ tags: [openseeface, vseeface, deserialization, binaryformatter]
 description: ""
 ---
 
-## Summary
 
 I found this issue while using AI to analyze the OpenSeeFace repository. The vulnerable code path used `BinaryFormatter.Deserialize()`.
 
