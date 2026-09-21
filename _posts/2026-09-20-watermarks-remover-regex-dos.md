@@ -2,7 +2,7 @@
 title: "How a 1.4 KB ODT file turned into a 99-second DoS"
 date: 2026-09-20
 categories: [Security Research]
-tags: [security, dos, regex, python, watermarks-remover, fuzzing]
+tags: [security, dos, regex, python, watermarks-remover]
 ---
 
 I found this while using Claude to analyze the [`watermarks-remover`](https://github.com/guillaumemeyer/watermarks-remover) repository.
