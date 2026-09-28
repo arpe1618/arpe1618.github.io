@@ -5,7 +5,6 @@ categories: [Security Research]
 tags: [crawl4ai, ssrf, robots.txt, python, security]
 ---
 
-## Summary
 
 I found this while using Claude Code to look through recent security fixes in open-source projects.
 
@@ -30,9 +29,9 @@ One of them fixed an SSRF in the PDF download path. The patch had a comment that
 In simpler terms:
 
 ```text
-Chromium already has SSRF protection
+Crawl4AI's Chromium fetch path already goes through the egress protection
         ↓
-the PDF downloader sends its own requests
+the PDF downloader sends its own requests outside that path
         ↓
 the same destination policy has to be attached there too
 ```
@@ -248,14 +247,20 @@ It is parsed internally as robots rules.
 
 Because of that, I did not treat this as a way to freely read internal HTTP responses. I reported it as **blind SSRF**.
 
+The PoC directly reproduced the unguarded outbound request and the redirect into loopback. The timing and `403` side channels below are possible impacts derived from the request/response flow; I did not separately demonstrate them in that PoC.
+
 The impact I could support was:
 
 - the server can send requests to internal, private, and link-local destinations
-- the `timeout=2` behavior can expose limited timing differences useful for service discovery
+- the `timeout=2` behavior can expose limited timing differences that may be useful for service discovery
 - if an internal response is parsed as `robots.txt` and contains a matching `Disallow`, the crawl can change to `403 "Access denied by robots.txt"`, giving a narrow side channel
 - TLS verification was disabled on this fetch because it used `ssl=False`
 
 I did not find a way to return the internal response body to the caller, and I said that explicitly in the report.
+
+There was also a practical limit on repeated probing. `RobotsParser` caches `robots.txt` rules by domain with a default seven-day TTL. Once a fresh cache entry exists, another request using the same domain may use the cached rules instead of issuing a new fetch.
+
+That limits repeated probing through one cache key, but it does not remove the underlying SSRF path. A different attacker-controlled hostname is a different domain/cache entry and can cause another fetch.
 
 The final GHSA also classifies the issue as blind SSRF.
 
