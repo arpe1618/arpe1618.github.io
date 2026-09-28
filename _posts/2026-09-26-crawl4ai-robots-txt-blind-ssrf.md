@@ -22,9 +22,7 @@ The advisory rates it as CWE-918, Moderate, CVSS 5.3.
 
 `crawl4ai 0.9.3` included several security fixes.
 
-One of them fixed an SSRF in the PDF download path. The patch had a comment that stood out:
-
-> "The pinning proxy only covers Chromium. PDFContentScrapingStrategy fetches with requests on its own, so hand the library the same destination policy or that path stays an unguarded SSRF hole."
+One of them fixed an SSRF in the PDF download path. A comment in the patch stood out to me. Its point was that the PDF path performed its own outbound requests, so it needed to be covered by the same destination policy used to protect the browser path.
 
 In simpler terms:
 
