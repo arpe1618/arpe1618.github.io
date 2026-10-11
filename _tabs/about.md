@@ -4,7 +4,7 @@ icon: fas fa-flask
 order: 4
 ---
 
-Computer Science Freshman | Security Research
+Computer Science Freshman / Security Research
 
 This blog contains vulnerability research, technical notes, and research logs.
 
