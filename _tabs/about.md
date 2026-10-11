@@ -1,7 +1,7 @@
 ---
 title: Research
 icon: fas fa-flask
-order: 4
+order: 2
 ---
 
 Computer Science Freshman / Security Research
