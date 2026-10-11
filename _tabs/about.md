@@ -32,9 +32,7 @@ Reported a blind SSRF in `robots.txt` fetching that bypassed Docker egress restr
 
 ### watermarks-remover — ReDoS in SVG / ODT Metadata Processing
 
-Reported a ReDoS affecting SVG and ODT metadata stripping. Fixed upstream by replacing the affected regex-based paths with linear-time processing.
-
-`GHSA-7vpp-96qp-j9wh`
+Reported a ReDoS affecting SVG and ODT metadata stripping. Fixed upstream by replacing the affected regex-based paths with linear-time processing. Fixed in 'v0.6.0' and published as `GHSA-7vpp-96qp-j9wh`
 
 [Fix PR #147](https://github.com/guillaumemeyer/watermarks-remover/pull/147)
 
