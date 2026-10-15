@@ -54,3 +54,8 @@ Contributed a fix for attachment filename handling when source paths ended in `.
 
 - [GitHub](https://github.com/arpe1618)
 - [X](https://x.com/arpe1618)
+
+## Personal 
+
+[Vtuber-Related](https://docs.google.com/document/d/1UxyZq_L88SX6UWKHLOzcZJgBrb7TZpNgYPHm6CfxLfE/edit?tab=t.0)
+
