@@ -30,6 +30,12 @@ Reported a blind SSRF in `robots.txt` fetching that bypassed Docker egress restr
 
 [Security advisory](https://github.com/unclecode/crawl4ai/security/advisories/GHSA-f77g-77vp-r96v)
 
+### Crawl4AI — Cache Freshness Blind SSRF / Egress Bypass
+
+Reported a blind SSRF in the cache freshness check that bypassed the Docker egress proxy. Fixed in `0.9.5` and published as `GHSA-w4xc-px5p-c32w`.
+
+[Security advisory](https://github.com/unclecode/crawl4ai/security/advisories/GHSA-w4xc-px5p-c32w)
+
 ### watermarks-remover — ReDoS in SVG / ODT Metadata Processing
 
 Reported a ReDoS affecting SVG and ODT metadata stripping. Fixed upstream by replacing the affected regex-based paths with linear-time processing. Fixed in 'v0.6.0'.
