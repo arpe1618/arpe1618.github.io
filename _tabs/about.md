@@ -22,6 +22,12 @@ Reported three security issues, including plugin code execution triggered by sub
 
 [Patch notes — v1.3.0](https://store.steampowered.com/news/app/5075020/view/689768324345626714?l=english)
 
+### Netis EAP930 — Undocumented Debug Backdoor (CVE-2026-112360)
+
+Reported an undocumented debug backdoor in the Netis EAP930 access point firmware. Published as `CVE-2026-112360` 
+
+[CVE Record](https://www.cve.org/CVERecord?id=CVE-2026-112360) 
+
 ## Open Source Contributions
 
 ### Crawl4AI — robots.txt Blind SSRF / Egress Bypass
