@@ -14,7 +14,7 @@ This blog contains vulnerability research, technical notes, and research logs.
 
 Reported unsafe `BinaryFormatter` deserialization in expression model loading. Fixed in VSeeFace `1.13.38c5` and OpenSeeFace `1.20.5`.
 
-[Write-up](https://arpe1618.github.io/posts/openseeface-binaryformatter-deserialization/) · [OpenSeeFace patch](https://github.com/emilianavt/OpenSeeFace/commit/a8b4c9979b9214434aa5f1c2e063d9ebd0d49d43)
+[OpenSeeFace patch](https://github.com/emilianavt/OpenSeeFace/commit/a8b4c9979b9214434aa5f1c2e063d9ebd0d49d43)
 
 ### Little LUMI Model (꼬미) — Workshop Subscription Plugin Code Execution + 2 Additional Issues
 
