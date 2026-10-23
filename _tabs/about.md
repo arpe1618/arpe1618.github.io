@@ -42,6 +42,12 @@ Reported a blind SSRF in the cache freshness check that bypassed the Docker egre
 
 [Security advisory](https://github.com/unclecode/crawl4ai/security/advisories/GHSA-w4xc-px5p-c32w)
 
+### MCP Rust SDK — OAuth Discovery SSRF Bypass
+
+Independently reported an SSRF bypass in `rmcp` OAuth discovery that allowed DNS hostnames resolving to internal IP addresses to bypass existing SSRF protections. Fixed in `3.7.0` and published as `GHSA-5p52-q7pq-9fq2`.
+
+[Security advisory](https://github.com/modelcontextprotocol/rust-sdk/security/advisories/GHSA-5p52-q7pq-9fq2)
+
 ### watermarks-remover — ReDoS in SVG / ODT Metadata Processing
 
 Reported a ReDoS affecting SVG and ODT metadata stripping. Fixed upstream by replacing the affected regex-based paths with linear-time processing. Fixed in 'v0.6.0'.
