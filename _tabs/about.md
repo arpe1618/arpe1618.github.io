@@ -28,6 +28,10 @@ Reported an undocumented debug backdoor in the Netis EAP930 access point firmwar
 
 [CVE Record](https://www.cve.org/CVERecord?id=CVE-2026-112360) 
 
+### VTubeStudio
+
+Received reward from DenchiSoft’s bug bounty program for reporting a security vulnerability
+
 ## Open Source Contributions
 
 ### Crawl4AI — robots.txt Blind SSRF / Egress Bypass
