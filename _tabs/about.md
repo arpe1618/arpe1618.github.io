@@ -12,13 +12,21 @@ This blog contains vulnerability research, technical notes, and research logs.
 
 ### VSeeFace / OpenSeeFace — Unsafe BinaryFormatter Deserialization
 
-Reported unsafe `BinaryFormatter` deserialization in expression model loading. Fixed in VSeeFace `1.13.38c5` and OpenSeeFace `1.20.5`.
+Reported unsafe `BinaryFormatter` deserialization in expression model loading. Fixed in VSeeFace `1.13.38c5` and OpenSeeFace `1.20.5`. [Write up](https://arpe1618.github.io/posts/openseeface-binaryformatter-deserialization/)
 
 [OpenSeeFace patch](https://github.com/emilianavt/OpenSeeFace/commit/a8b4c9979b9214434aa5f1c2e063d9ebd0d49d43)
 
 ### Little LUMI Model (꼬미) — Workshop Subscription Plugin Code Execution + 2 Additional Issues
 
-Reported three security issues, including plugin code execution triggered by subscribing to Workshop content. Fixed in `1.3.0`.
+Discovered and responsibly disclosed three security vulnerabilities affecting Workshop content and locally installed mods.
+
+- **Workshop Plugin Code Execution:** Identified a path where subscribing to a Workshop item could lead to arbitrary Java code execution on the next application launch, without explicit user consent.
+
+- **Unsafe Language Resource Loadin:** Discovered that locally installed mods could trigger arbitrary code execution during application startup through unsafe language resource loading.
+
+- **XML External Entity Injection:** Identified an XXE vulnerability in the character selection XML parser that allowed locally installed mods to expose local file contents through the application UI.
+
+They fixed in `1.3.0`.
 
 [Patch notes — v1.3.0](https://store.steampowered.com/news/app/5075020/view/689768324345626714?l=english)
 
