@@ -38,7 +38,7 @@ Reported an undocumented debug backdoor in the Netis EAP930 access point firmwar
 
 ### VTubeStudio
 
-Received reward from DenchiSoft’s bug bounty program for reporting a security vulnerability
+Received reward from DenchiSoft’s bug bounty program for reporting a security vulnerability (2 items)
 
 ## Open Source Contributions
 
