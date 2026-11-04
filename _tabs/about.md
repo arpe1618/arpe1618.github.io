@@ -80,6 +80,12 @@ Identified inconsistent Gateway routing caused by ambiguous capability-scoped re
 
 [Original PR #146923](https://github.com/openclaw/openclaw/pull/146923) · [Merged PR #190863](https://github.com/openclaw/openclaw/pull/190863)
 
+### OpenClaw — Terminal Bidi Spoofing in Node Pairing
+
+Identified a bidirectional-control spoofing issue in the pending node pairing UI. The fix was incorporated into PR `#186502` with co-author credit.
+
+[Original PR #150599](https://github.com/openclaw/openclaw/pull/150599) · [Merged PR #186502](https://github.com/openclaw/openclaw/pull/186502)
+
 ## Links
 
 - [GitHub](https://github.com/arpe1618)
