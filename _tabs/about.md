@@ -74,6 +74,12 @@ Contributed a fix for attachment filename handling when source paths ended in `.
 
 [PR #135135](https://github.com/openclaw/openclaw/pull/135135)
 
+### OpenClaw — Ambiguous Capability-Scoped Request Paths
+
+Identified inconsistent Gateway routing caused by ambiguous capability-scoped request paths. The fix was incorporated into PR `#190863` with co-author credit.
+
+[Original PR #146923](https://github.com/openclaw/openclaw/pull/146923) · [Merged PR #190863](https://github.com/openclaw/openclaw/pull/190863)
+
 ## Links
 
 - [GitHub](https://github.com/arpe1618)
