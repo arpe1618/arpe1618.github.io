@@ -10,11 +10,15 @@ This blog contains vulnerability research, technical notes, and research logs.
 
 ## Responsible Disclosure
 
-### VSeeFace / OpenSeeFace — Unsafe BinaryFormatter Deserialization
+### VTubeStudio
 
-Reported unsafe `BinaryFormatter` deserialization in expression model loading. Fixed in VSeeFace `1.13.38c5` and OpenSeeFace `1.20.5`. [Write up](https://arpe1618.github.io/posts/openseeface-binaryformatter-deserialization/)
+Received reward from DenchiSoft’s bug bounty program for reporting a security vulnerability (2 items)
 
-[OpenSeeFace patch](https://github.com/emilianavt/OpenSeeFace/commit/a8b4c9979b9214434aa5f1c2e063d9ebd0d49d43)
+### Netis EAP930 — Undocumented Debug Backdoor (CVE-2026-112360)
+
+Reported an undocumented debug backdoor in the Netis EAP930 access point firmware. Published as `CVE-2026-112360` 
+
+[CVE Record](https://www.cve.org/CVERecord?id=CVE-2026-112360) 
 
 ### Little LUMI Model (꼬미) — Workshop Subscription Plugin Code Execution + 2 Additional Issues
 
@@ -30,15 +34,12 @@ They fixed in `1.3.0`.
 
 [Patch notes — v1.3.0](https://store.steampowered.com/news/app/5075020/view/689768324345626714?l=english)
 
-### Netis EAP930 — Undocumented Debug Backdoor (CVE-2026-112360)
+### VSeeFace / OpenSeeFace — Unsafe BinaryFormatter Deserialization
 
-Reported an undocumented debug backdoor in the Netis EAP930 access point firmware. Published as `CVE-2026-112360` 
+Reported unsafe `BinaryFormatter` deserialization in expression model loading. Fixed in VSeeFace `1.13.38c5` and OpenSeeFace `1.20.5`. 
 
-[CVE Record](https://www.cve.org/CVERecord?id=CVE-2026-112360) 
-
-### VTubeStudio
-
-Received reward from DenchiSoft’s bug bounty program for reporting a security vulnerability (2 items)
+[Write up](https://arpe1618.github.io/posts/openseeface-binaryformatter-deserialization/)
+[OpenSeeFace patch](https://github.com/emilianavt/OpenSeeFace/commit/a8b4c9979b9214434aa5f1c2e063d9ebd0d49d43)
 
 ## Open Source Contributions
 
