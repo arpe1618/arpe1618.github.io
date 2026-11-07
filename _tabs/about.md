@@ -8,7 +8,7 @@ Computer Science Freshman / Security Research
 
 This blog contains vulnerability research, technical notes, and research logs.
 
-## @Responsible Disclosure
+## @ Responsible Disclosure
 
 ### VTubeStudio
 
@@ -41,7 +41,7 @@ Reported unsafe `BinaryFormatter` deserialization in expression model loading. F
 [Write up](https://arpe1618.github.io/posts/openseeface-binaryformatter-deserialization/)
 [OpenSeeFace patch](https://github.com/emilianavt/OpenSeeFace/commit/a8b4c9979b9214434aa5f1c2e063d9ebd0d49d43)
 
-## @Open Source Contributions
+## @ Open Source Contributions
 
 ### Crawl4AI — robots.txt Blind SSRF / Egress Bypass
 
@@ -87,12 +87,12 @@ Identified a bidirectional-control spoofing issue in the pending node pairing UI
 
 [Original PR #150599](https://github.com/openclaw/openclaw/pull/150599) · [Merged PR #186502](https://github.com/openclaw/openclaw/pull/186502)
 
-## Links
+## @ Links
 
 - [GitHub](https://github.com/arpe1618)
 - [X](https://x.com/arpe1618)
 
-## Personal 
+## @ Personal 
 
 [Vtuber-Related](https://docs.google.com/document/d/1UxyZq_L88SX6UWKHLOzcZJgBrb7TZpNgYPHm6CfxLfE/edit?tab=t.0)
 
