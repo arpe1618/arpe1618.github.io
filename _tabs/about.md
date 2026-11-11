@@ -45,13 +45,13 @@ Reported unsafe `BinaryFormatter` deserialization in expression model loading. F
 
 ### Crawl4AI — robots.txt Blind SSRF / Egress Bypass
 
-Reported a blind SSRF in `robots.txt` fetching that bypassed Docker egress restrictions. Fixed in `0.9.4` and published as `GHSA-f77g-77vp-r96v`.
+Reported a blind SSRF in `robots.txt` fetching that bypassed Docker egress restrictions. Fixed in `0.9.4` and published as `GHSA-f77g-77vp-r96v`, `CVE-2026-109239`.
 
 [Security advisory](https://github.com/unclecode/crawl4ai/security/advisories/GHSA-f77g-77vp-r96v)
 
 ### Crawl4AI — Cache Freshness Blind SSRF / Egress Bypass
 
-Reported a blind SSRF in the cache freshness check that bypassed the Docker egress proxy. Fixed in `0.9.5` and published as `GHSA-w4xc-px5p-c32w`.
+Reported a blind SSRF in the cache freshness check that bypassed the Docker egress proxy. Fixed in `0.9.5` and published as `GHSA-w4xc-px5p-c32w`, `CVE-2026-119122`.
 
 [Security advisory](https://github.com/unclecode/crawl4ai/security/advisories/GHSA-w4xc-px5p-c32w)
 
