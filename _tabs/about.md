@@ -75,15 +75,16 @@ Contributed a fix for attachment filename handling when source paths ended in `.
 
 [PR #135135](https://github.com/openclaw/openclaw/pull/135135)
 
+
 ### OpenClaw — Ambiguous Capability-Scoped Request Paths
 
-Identified inconsistent Gateway routing caused by ambiguous capability-scoped request paths. The fix was incorporated into PR `#190863` with co-author credit.
+Identified inconsistent Gateway routing caused by ambiguous capability-scoped request paths. The fix was incorporated into PR `#190863` with co-author credit and released in `v2026.11.4`.
 
 [Original PR #146923](https://github.com/openclaw/openclaw/pull/146923) · [Merged PR #190863](https://github.com/openclaw/openclaw/pull/190863)
 
 ### OpenClaw — Terminal Bidi Spoofing in Node Pairing
 
-Identified a bidirectional-control spoofing issue in the pending node pairing UI. The fix was incorporated into PR `#186502` with co-author credit.
+Identified a bidirectional-control spoofing issue in the pending node pairing UI. The fix was incorporated into PR `#186502` with co-author credit and released in `v2026.11.5`.
 
 [Original PR #150599](https://github.com/openclaw/openclaw/pull/150599) · [Merged PR #186502](https://github.com/openclaw/openclaw/pull/186502)
 
