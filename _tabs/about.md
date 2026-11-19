@@ -55,6 +55,32 @@ Reported a blind SSRF in the cache freshness check that bypassed the Docker egre
 
 [Security advisory](https://github.com/unclecode/crawl4ai/security/advisories/GHSA-w4xc-px5p-c32w)
 
+
+### Eclipse Ditto — Resolved Policy View Information Disclosure
+
+Reported an authorization bypass in the resolved policy view that exposed restricted content from imported, namespace root, and referenced policy entries. Fixed in `3.9.9` and published as `GHSA-mx63-5cwx-v3pr`, `CVE-2026-129916`.
+
+[Security advisory](https://github.com/eclipse-ditto/ditto/security/advisories/GHSA-mx63-5cwx-v3pr)
+
+### Eclipse Ditto — Policy Enforcer Authorization Bypass
+
+Reported incorrect permission evaluation in multi-permission and partial permission checks, allowing revoked permissions to be treated as granted. Fixed in `3.8.15` and `3.9.9` and published as `GHSA-73pw-g56w-95h8`, `CVE-2026-129702`.
+
+[Security advisory](https://github.com/eclipse-ditto/ditto/security/advisories/GHSA-73pw-g56w-95h8)
+
+### Eclipse Ditto — Thing Data Disclosure via Condition Headers
+
+Reported a missing READ authorization check when `condition` and `live-channel-condition` headers were combined, allowing disclosure of restricted Thing fields. Fixed in `3.8.15` and `3.9.9` and published as `GHSA-x88m-jq5c-jpcq`, `CVE-2026-129700`.
+
+[Security advisory](https://github.com/eclipse-ditto/ditto/security/advisories/GHSA-x88m-jq5c-jpcq)
+
+### Eclipse Ditto — JSON Merge Patch WRITE Authorization Bypass
+
+Reported a regex-based deletion bypass in JSON merge patch authorization, allowing unauthorized deletion of restricted Thing fields. Fixed in `3.8.15` and `3.9.9` and published as `GHSA-5hh9-qp4v-6f56`, `CVE-2026-129699`.
+
+[Security advisory](https://github.com/eclipse-ditto/ditto/security/advisories/GHSA-5hh9-qp4v-6f56)
+
+
 ### MCP Rust SDK — OAuth Discovery SSRF Bypass
 
 Independently reported an SSRF bypass in `rmcp` OAuth discovery that allowed DNS hostnames resolving to internal IP addresses to bypass existing SSRF protections. Fixed in `3.7.0` and published as `GHSA-5p52-q7pq-9fq2`.
