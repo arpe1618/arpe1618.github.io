@@ -92,6 +92,12 @@ Reported a regex-based deletion bypass in JSON merge patch authorization, allowi
 
 [Security advisory](https://github.com/eclipse-ditto/ditto/security/advisories/GHSA-5hh9-qp4v-6f56)
 
+### OpenSSL — QUIC Stream Reassembly Memory Exhaustion
+
+Independently reported a memory exhaustion vulnerability in QUIC stream reassembly, allowing remote denial of service. Fixed upstream and published as `CVE-2026-84785` with shared reporter credit.
+
+[Security advisory](https://openssl-library.org/news/secadv/20261124.txt)
+
 
 ### MCP Rust SDK — OAuth Discovery SSRF Bypass
 
