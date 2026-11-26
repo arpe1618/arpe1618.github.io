@@ -55,6 +55,18 @@ Reported a blind SSRF in the cache freshness check that bypassed the Docker egre
 
 [Security advisory](https://github.com/unclecode/crawl4ai/security/advisories/GHSA-w4xc-px5p-c32w)
 
+### Crawl4AI — Browser Context Isolation Failure / Cross-Client Data Leakage
+
+Reported a browser context isolation failure in the Docker API server, allowing cookies and site storage to leak between API clients. Fixed in `0.9.6` and published as `GHSA-9xxj-3r64-qw54`.
+
+[Security advisory](https://github.com/unclecode/crawl4ai/security/advisories/GHSA-9xxj-3r64-qw54)
+
+### Eclipse Ditto — JavaScript Payload Mapper Sandbox Escape
+
+Reported a sandbox escape in the JavaScript payload mapper, allowing arbitrary code execution in the connectivity service. Fixed in `3.9.10` and published as `GHSA-9mpq-m32x-4q7p`, `CVE-2026-135203`.
+
+[Security advisory](https://github.com/eclipse-ditto/ditto/security/advisories/GHSA-9mpq-m32x-4q7p)
+
 
 ### Eclipse Ditto — Resolved Policy View Information Disclosure
 
